@@ -65,7 +65,7 @@ class Isolate:
         for file in self.Input_Files:
             dia = pipeline(str(self.Input_Dir / file))
             self.Speakers.append(dia)
-            # print(f"Seperated speakers for {file}")
+            print(f"Seperated speakers for {file}")
 
     def find_number_speakers(self, track) -> list:
         """
